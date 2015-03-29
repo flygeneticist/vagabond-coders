@@ -1,2 +1,2 @@
-# vagabond-coders
-Vagabond Coders - A Nomadic Web Development Studio
+# Vagabond Coders
+## A Nomadic Web Development Studio
