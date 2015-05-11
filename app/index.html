@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Studio</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1,  maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Your styles -->
+    <link href="css/style.css" rel="stylesheet" media="screen"> 
+    <link href="css/responsive-theme.css" rel="stylesheet" media="screen">
+
+    <!-- Skins Theme -->
+    <link href="#" rel="stylesheet" media="screen" class="skin">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">  
+    
+    <!-- styles for IE -->
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+    <![endif]-->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="js/css3selectors/selectivizr.js"></script>
+    <![endif]-->
+   
+
+    <!-- Skins Changer-->
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+    <script src="js/modernizr/modernizr.js"></script>
+
+  </head>
+  <body> 
+
+  <!-- Theme-options -->
+    <div id="theme-options" class="center">
+      <div class="title">Theme Options<span title="Theme Options"><i class="fa fa-cogs fa-spin"></i></span></div>
+      <span>COLOR SCHEMES</span>
+        <ul id="colorchanger">      
+          <li><a class="colorbox green" href="?theme=green" title="Green Skin"></a></li>
+          <li><a class="colorbox cyan" href="?theme=cyan" title="cyan Skin"></a></li>
+          <li><a class="colorbox orange" href="?theme=orange" title="Orange Skin"></a></li>
+          <li><a class="colorbox bone" href="?theme=bone" title="bone Skin"></a></li>
+          <li><a class="colorbox yellow" href="?theme=yellow" title="yellow Skin"></a></li>
+          <li><a class="colorbox red" href="?theme=red" title="Red Skin"></a></li>
+          <li><a class="colorbox orange-light" href="?theme=orange-light" title="Red Skin"></a></li>
+          <li><a class="colorbox purple" href="?theme=purple" title="purple Skin"></a></li>
+          <li><a class="colorbox brown" href="?theme=brown" title="brown Skin"></a></li>
+          <li><a class="colorbox blue" href="?theme=blue" title="blue Skin"></a></li>
+        </ul>
+
+        <span>OVERALL COLOR SKIN</span>
+        <div class="note-theme">
+          <p><span>note: </span>when you clicked in "Default", you can choose some "color schemes" (top <i class="fa fa-level-up"></i> ) for change the overall color skin.</p>
+        </div>
+        <ul id="layout-style">      
+            <li class="dark">Dark</li>
+            <li class="light">Light</li>
+            <li class="default active">Default</li>
+        </ul>
+
+        <span>HOMEPAGE VARIANTS</span>
+        <div id="homepage-style">      
+            <select name="versions" onchange="location = this.options[this.selectedIndex].value;">
+                <option value="index-video.html">Home Video</option> 
+                <option value="index-image.html">Home Image</option> 
+                <option value="index-parallax.html">Home Parallax</option> 
+                <option value="index.html" selected>Home Bg Slideshow</option> 
+                <option value="index-moving.html">Home Bg Moving</option> 
+                <option value="simple-slider-home.html">Home Slider Revolution</option> 
+            </select>
+        </div>
+
+        <div id="buy-theme">
+          <span><a href="http://themeforest.net/item/studiomultipurpose-videoparallaxslider-theme/6981121?ref=iwthemes" target="_blank">BUY THIS THEME</a></span>
+        </div>
+
+    </div>
+  <!--End Theme-options -->
+
+  <!--Layout Theme Options-->
+  <div id="layout">
+
+        <!-- Header -->
+        <header class="header">
+            <!-- container -->
+
+            <!-- flat-mega-menu class -->
+            <div class="flat-mega-menu">
+
+                <!-- mobile click button to show menu -->
+                <label for="mobile-button"> <i class="fa fa-bars"></i> </label>
+                <input id="mobile-button" type="checkbox">
+
+                <!-- collapse class for collapse the drop down -->
+                <ul class="collapse">
+                    <li class="title"> 
+                        <a href="index.html">
+                            <img src="css/skins/orange-light/logo.png" alt="Logo" class="logo">
+                        </a> 
+                    </li>      
+
+                    <!-- website title class -->
+                    <li> <a href="#home">Home <i class="fa fa-angle-down"></i></a>
+                        <ul class="drop-down one-column hover-zoom">
+                            <!-- first level drop down -->
+                            <li> <a href="index-video.html">Home Video</a></li>
+                            <li> <a href="index-image.html">Home Image</a></li>
+                            <li> <a href="index-parallax.html">Home Parallax</a></li>
+                            <li> <a href="index.html">Home Bg Slideshow</a></li>
+                            <li> <a href="index-moving.html">Home Bg Moving</a></li>
+                            <li> <a href="simple-slider-home.html">Home Slider Revolution</a></li>
+                        </ul>
+                    </li>
+
+                    <li> <a href="#work">Works</a></li>
+
+                    <li> <a href="#about">About</a></li>
+
+                    <li> <a href="#blog">Blog <i class="fa fa-angle-down"></i></a>
+
+                        <ul class="drop-down one-column hover-zoom">
+                            <!-- first level drop down -->
+                            <li> <a href="single-post.html">Single Post</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li> <a href="#services">Services</a></li>
+
+                    <li> <a href="#">Features <i class="fa fa-angle-down"></i></a> 
+
+                        <ul class="drop-down one-column hover-zoom">
+
+                            <!-- first level drop down -->
+                            <li> <a href="elements.html">Shortcodes</a></li>
+                            <li> <a href="icons.html">Icons</a></li>
+                            <li> <a href="404page.html">404 Page</a></li>
+                            <li> <a href="pricing.html">Pricing Tables</a></li>
+                            <li> <a href="single-post.html">Single Post</a></li>
+
+                            <li> <a href="#">Blog Sidebar </a> <i class="fa fa-angle-right"></i>
+                
+                                <ul class="drop-down one-column hover-expand"> 
+                                    <li> <a href="sidebar-left.html">Sidebar Left</a></li>
+                                    <li> <a href="sidebar-right.html">Sidebar Right</a></li>
+                                    <li> <a href="sidebar-full.html">Sidebar Full Width</a></li>
+                                </ul>
+                            
+                            </li>
+
+                            <li> <a href="#">Headers </a> <i class="fa fa-angle-right"></i>
+                
+                                <ul class="drop-down one-column hover-expand">
+                                    <li> <a href="header-transparent.html">Transparent Header</a></li>
+                                    <li> <a href="header-slideshow.html">Slideshow Header</a></li>
+                                    <li> <a href="header-2.html">Social Header</a></li>
+                                </ul>
+                            
+                            </li>
+
+                            <li> <a href="#">Title Styles </a> <i class="fa fa-angle-right"></i>
+                
+                                <ul class="drop-down one-column hover-expand">
+                                    <li> <a href="title-centered-home.html">Title Centered</a></li>
+                                    <li> <a href="header-slideshow.html">Default Title</a></li>
+                                </ul>
+                            
+                            </li>
+
+                            <li> <a href="#">Background Home </a> <i class="fa fa-angle-right"></i>
+                
+                                <ul class="drop-down one-column hover-expand">
+                                    <li> <a href="index-video.html">Home Video</a></li>
+                                    <li> <a href="index-image.html">Home Image</a></li>
+                                    <li> <a href="index-parallax.html">Home Parallax</a></li>
+                                    <li> <a href="index.html">Home Bg Slideshow</a></li>
+                                    <li> <a href="index-moving.html">Home Bg Moving</a></li>
+                                    <li> <a href="simple-slider-home.html">Home Slider Revolution</a></li>
+                                </ul>
+                            
+                            </li>
+                
+                        </ul>
+                         
+                    
+                    </li>
+
+                    <li> <a href="#contact">Contact Us</a></li>
+
+                    <li class="social-bar"> <a href="#">Follow us <i class="fa fa-angle-down"></i></a> 
+                    
+                        <ul class="drop-down hover-zoom social_icon center">
+                            <li> <a href="#"> <i class="fa fa-dribbble"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-flickr"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-tumblr"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-instagram"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-youtube"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-google-plus"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-linkedin"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-pinterest"></i> </a> </li>
+                        </ul>
+                    
+                    </li>
+
+                    <!-- login form -->
+                    <li class="login-form"> <i class="fa fa-user"></i>                  
+                    
+                        <ul class="drop-down hover-expand">
+                            
+                            <form method="post" action="#">
+                                <table>
+                                    <tr>
+                                        <td colspan="2"> <input type="email" class="fa fa-camera-retro" name="email" placeholder="Your email address" required > </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"> <input type="password" name="password" placeholder="Password" required > </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <input type="submit" value="Login"> </td>
+                                        <td> <label> <input type="checkbox" name="check_box"> Keep me signed in </label> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                            
+                        </ul>
+                    
+                    </li>    
+
+                    <li class="search-bar"> <i class="fa fa-search"></i><!-- search bar -->
+                    
+                        <ul class="drop-down hover-expand">
+                            
+                            <form method="post" action="#">
+                                <table>
+                                    <tr>
+                                        <td> <input type="text" name="serach_bar" placeholder="Keyword Here"> </td>
+                                        <td> <input type="submit" value="Search"> </td>
+                                    </tr>
+                                </table>
+                            </form>
+                            
+                        </ul>
+                    
+                    </li>           
+                </ul>
+
+            </div>
+            <!-- flat-mega-menu class -->
+
+        </header>
+        <!-- Header -->
+        
+        <!-- Slide -->   
+        <section id="slide">   
+            <div id="slider" class="camera_wrap">
+              <!-- Item Slide style_one--> 
+              <div  data-src="img/slide/slides/1.jpg"></div>
+              <!-- End Item Slide style_one -->  
+
+              <!-- Item Slide style_one--> 
+              <div  data-src="img/slide/slides/2.jpg"></div>
+              <!-- End Item Slide style_one -->  
+            </div>  
+        </section>      
+        <!-- End Slide --> 
+
+        <!-- Home -->
+        <section class="bg_image center home" id="home">
+
+          <!-- pattern_top -->
+          <div class="pattern_top"></div>
+          <!-- end pattern_top -->
+
+          <!-- main content -->
+            <div class="opacy">
+              <div class="container">
+                <div class="row paddings-content home-main">
+
+                    <h2 class="wow animated fadeInDown" data-wow-duration="1s">We are</h2>
+                    <h1 class="wow animated zoomInDown" data-wow-duration="2s">STUDIO</h1>
+                    <div class="divider_light"></div>
+                    <p class="wow animated fadeInUp" data-wow-duration="2.5s">Envato is an ecosystem of sites to help you get creative. From our world-leading digital marketplaces where you can buy images, templates, project files and creative assets.</p>
+                    <p class="wow animated fadeInUp" data-wow-duration="2.5s">To our education network of tutorials and courses where you can learn new skills and crafts, our sites and services help millions of people around the world.</p>
+                    <a href="#">
+                        <img src="css/skins/orange-light/logo-big.png" alt="Logo" class="logo_big top">
+                    </a>
+
+                </div>
+              </div>
+            </div>
+          <!-- end main content -->
+
+          <!-- pattern_top -->
+          <div class="pattern_bottom"></div>
+          <!-- end pattern_top -->
+
+        </section>
+        <!-- end Home -->
+
+        <!-- Work -->
+        <section class="color work paddings" id="work">
+
+            <!-- pattern_top -->
+            <div class="pattern_top"></div>
+            <!-- end pattern_top -->
+
+            <div class="container">
+                <div class="row title">
+                        <div class="col-md-6">
+                            <h2 class="color-black wow bounceInLeft animated" data-wow-duration="2.5s">Works</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="left wow bounceInRight animated" data-wow-duration="2.5s">Envato Market is home to thousands of talented designers, developers and creators of all kinds, who sell a huge range of digital goods and assets. There’s everything from photographs to project files, sound effects to video templates.</p>
+                    </div>
+                </div>
+
+                <div class="divider_dark"></div>
+        
+                <!--Carousel-->
+                <div class="row paddings-content">
+                    <div class="col-md-12">
+                        <ul class="ch-grid center">
+
+                          <!--Item-->
+                          <li>
+                            <div class="ch-item ch-img-1">
+                              <div class="ch-info center">
+                                <h2>Example Video Mode</h2>
+                                <div class="divisor"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur.</p>
+                                <a class="iframe_video" title="" href="http://www.youtube.com/embed/2f2n1bW7vZ0?autoplay=1">View</a>
+                              </div>
+                            </div>
+                          </li>
+                          <!--Item-->
+
+                          <!--Item-->
+                          <li>
+                            <div class="ch-item ch-img-2">
+                              <div class="ch-info center">
+                                <h2>Example Image Mode</h2>
+                                <div class="divisor"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur.</p>
+                                <a class="fancybox" title="" href="img/works/lightbox.jpg">View</a>
+                              </div>
+                            </div>
+                          </li>
+                          <!--Item-->
+
+                          <!--Item-->
+                          <li>
+                            <div class="ch-item ch-img-3">
+                              <div class="ch-info center">
+                               <h2>Example Iframe Mode</h2>
+                                <div class="divisor"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur.</p>
+                                <a class="fancybox fancybox.iframe" href="http://iwthemes.com/">View</a> 
+                                <!--Here, you can add an url (like example) or a .html site-->
+                              </div>
+                            </div>
+                          </li>
+                          <!--Item-->
+
+                          <!--Item-->
+                          <li>
+                            <div class="ch-item ch-img-4">
+                              <div class="ch-info center">
+                               <h2>Opening a Document</h2>
+                                <div class="divisor"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur.</p>
+                                <a class="fancybox fancybox.iframe" title="" href="http://html.iwthemes.com/NewHost/presentation_brochure.pdf">View</a>
+                              </div>
+                            </div>
+                          </li>
+                          <!--Item-->
+
+                        </ul>
+                    </div>
+                </div>
+                <!--Carousel-->
+
+                <div class="divider_dark"></div>
+
+                <!-- social -->
+                <div class="social">
+                   <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                        <h3 class="wow bounceInLeft animated" data-wow-duration="2.5s"><span>Want to see more? </span> follow us on:</h3>
+                      </div>
+                      <div class="col-md-6 right col-sm-6">
+                        <div class="social_icon wow bounceInRight animated" data-wow-duration="2.5s">
+                            <a href="#" class="tooltip_hover" title="Dribble Tooltip" target="_blank"><i class="fa fa-dribbble"></i></a>
+                            <a href="#" class="tooltip_hover" title="Linkedin Tooltip" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" class="tooltip_hover" title="Flickr Tooltip" target="_blank"><i class="fa fa-flickr"></i></a>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- end social -->
+
+            </div>
+
+            <!-- pattern_bottom -->
+            <div class="pattern_bottom"></div>
+            <!-- end pattern_bottom -->
+
+        </section>
+        <!-- end Work -->
+
+        <!-- About -->
+        <section class="bg_image center" id="about">
+        
+            <!-- pattern_top -->
+            <div class="pattern_top"></div>
+            <!-- end pattern_top -->
+
+            <!-- content -->
+            <div class="opacy">
+                <div class="container">
+
+                    <div class="row title wow bounceIn animated" data-wow-duration="2.5s">
+
+                        <div class="col-md-7 col-sm-12">
+                            <p class="right">Envato Market is home to thousands of talented designers, developers and creators of all kinds, who sell a huge range of digital goods and assets.</p>
+                        </div>
+
+                        <div class="col-md-5 col-sm-12">
+                            <h2>About</h2>
+                        </div>
+                    </div>
+
+                    <div class="divider_light"></div>
+
+                    <div class="row paddings-content">
+                       
+                        <div class="col-md-6 col-sm-6">
+
+                            <!--About Team-->
+                            <div class="about wow fadeInRight animated" data-wow-duration="2.5s">
+                                <img src="img/about/02.jpg" alt="">
+
+                                <div class="about_text">
+                                    <h2>Jhon David</h2>
+                                    <p>Co-founder, Director,<br>Frontend.</p>
+                                    <div class="social_icon">
+                                        <a href="#" class="tooltip_hover" title="Twiiter Tooltip" target="_blank"><i class="fa fa-twitter"></i></a>
+                                        <a href="#" class="tooltip_hover" title="Facebook Tooltip" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--About Team-->
+
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+
+                            <!--About Team-->
+                            <div class="about wow fadeInLeft animated" data-wow-duration="2.5s">
+                                <img src="img/about/01.jpg" alt="">
+
+                                <div class="about_text">
+                                    <h2>Jeniffer Bula</h2>
+                                    <p>Co-founder, Subdirector,<br>Backend.</p>
+                                    <div class="social_icon">
+                                        <a href="#" class="tooltip_hover" title="Twiiter Tooltip" target="_blank"><i class="fa fa-twitter"></i></a>
+                                        <a href="#" class="tooltip_hover" title="Facebook Tooltip" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--About Team-->
+
+                        </div>
+
+                    </div>
+
+                    <div class="divider_light display-none"></div>
+
+                    <!-- specialize -->
+                    <div class="specialize">
+                       <div class="row">
+
+                              <div class="col-md-2 col-sm-12"><h3>we specialize in:</h3></div>
+
+                              <!-- icon 01 -->
+                              <div class="col-md-2 col-sm-2">
+                                <a href="#" class="tooltip_hover" title="" data-original-title="Details Service"><i class="fa fa-desktop"></i></a>
+                                <p>Interactive Design</p>
+                              </div>
+                              <!-- end icon 01 -->
+
+                              <!-- icon 02 -->
+                              <div class="col-md-2 col-sm-2">
+                                <a href="#" class="tooltip_hover" title="" data-original-title="Details Service"><i class="fa fa-pencil"></i></a>
+                                <p>Illustration</p>
+                              </div>
+                              <!-- end icon 02 -->
+
+                              <!-- icon 03 -->
+                              <div class="col-md-2 col-sm-2">
+                                <a href="#" class="tooltip_hover" title="" data-original-title="Details Service"><i class="fa fa-mobile"></i></a>
+                                <p>Apps Design</p>
+                              </div>
+                              <!-- end icon 03 -->
+
+                              <!-- icon 04 -->
+                              <div class="col-md-2 col-sm-2">
+                                <a href="#" class="tooltip_hover" title="" data-original-title="Details Service"><i class="fa fa-user"></i></a>
+                                <p>UI/UX</p>
+                              </div>
+                              <!-- end icon 04 -->
+
+                              <!-- icon 05 -->
+                              <div class="col-md-2 col-sm-2">
+                                <a href="#" class="tooltip_hover" title="" data-original-title="Details Service"><i class="fa fa-chain-broken"></i></a>
+                                <p>Code</p>
+                              </div>
+                              <!-- end icon 05 -->
+
+                       </div>
+                    </div>
+                    <!-- end specialize -->
+
+                </div>
+            </div>
+            <!-- end content -->
+
+            <!-- pattern_bottom -->
+            <div class="pattern_bottom"></div>
+            <!-- end pattern_bottom -->
+
+        </section>
+        <!-- end About -->
+
+        <!-- Blog -->
+        <section class="color paddings" id="blog">
+
+            <!-- pattern_top -->
+            <div class="pattern_top"></div>
+            <!-- end pattern_top -->
+
+            <div class="container">
+
+                <div class="row title">
+                    <div class="col-md-4">
+                        <h2 class="color-black wow bounceInLeft animated" data-wow-duration="1.2s">Blog</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="left wow bounceInRight animated" data-wow-duration="1.2s">You’ll find out more about the technical choices we make, including the ones that don’t turn out as we hope. We’ll describe our approach to solving problems rather than simply adding features. Along the way, you will meet the team members and find out what makes them tick.</p>
+                    </div>
+                </div>
+  
+                <div class="divider_dark"></div>
+    
+                <!--Content Blog-->
+                <div class="row paddings-content">
+                  
+                    <div class="col-md-6 col-sm-12">
+
+                        <!--Item Blog-->
+                        <div class="item_blog top-cero wow flipInX animated" data-wow-duration="1.8s">
+                            <!--img_blog-->
+                              <div class="img_blog">
+                                <img src="img/blog/01.png" alt="">
+                                <!--hover_img_blog-->
+                                 <div class="hover_img_blog center">
+                                    <a href="single-post.html">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                 </div>
+                                 <!--End hover_img_blog-->
+                              </div>   
+                            <!-- End img_blog-->  
+                            
+                            <!-- info blog-->  
+                            <div class="info_blog">
+                              <!--date_blog-->
+                              <div class="date_blog">
+                                <h2><a href="single-post.html">5 Things I Learned From the Tuts+ Translation Project</a></h2>
+                                  <ul>
+                                    <li><i class="fa fa-user color-black"></i><a href="#"> Ian Yates</a></li>
+                                    <li><i class="fa fa-comments color-black"></i><a href="#"> 02 Comments</a></li>
+                                    <li><i class="fa fa-calendar color-black"></i> Sep 12 2014</li>
+                                  </ul>
+                              </div>
+                              <!--End date_blog-->
+
+                                <!--text_blog-->
+                                <div class="text_blog text-overflow">
+                                  <a href="#"><p>We recently launched the Tuts+ Translation Project.</p></a>
+                                </div>
+                                <!--End text_blog-->
+                            </div>
+                            <!-- End Info blog-->    
+
+                        </div>
+                        <!--End Item Blog-->
+                      
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+
+                        <!--Item Blog-->
+                        <div class="item_blog wow flipInX animated" data-wow-duration="1.8s" data-wow-delay="0.2s">
+                            <!--img_blog-->
+                              <div class="img_blog">
+                                <img src="img/blog/02.png" alt="">
+                                <!--hover_img_blog-->
+                                 <div class="hover_img_blog center">
+                                    <a href="single-post.html">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                 </div>
+                                 <!--End hover_img_blog-->
+                              </div>   
+                            <!-- End img_blog-->  
+                            
+                            <!-- info blog-->  
+                            <div class="info_blog">
+                              <!--date_blog-->
+                              <div class="date_blog">
+                                <h2><a href="single-post.html">New Email Preference Centre</a></h2>
+                                  <ul>
+                                    <li><i class="fa fa-user color-black"></i><a href="#"> Jess Hooper</a></li>
+                                    <li><i class="fa fa-comments color-black"></i><a href="#"> 0 Comments</a></li>
+                                    <li><i class="fa fa-calendar color-black"></i>  Sep. 5 2014</li>
+                                  </ul>
+                              </div>
+                              <!--End date_blog-->
+
+                                <!--text_blog-->
+                                <div class="text_blog text-overflow">
+                                  <a href="#"><p>You can now choose the topics you’re interested in learning about, and we’ll customise the emails we send to match those interests.</p></a>
+                                </div>
+                                <!--End text_blog-->
+                            </div>
+                            <!-- End Info blog-->    
+
+                        </div>
+                        <!--End Item Blog-->
+                      
+                    </div>
+
+                  
+                    <div class="col-md-6 col-sm-12">
+
+                        <!--Item Blog-->
+                        <div class="item_blog top wow flipInX animated" data-wow-duration="1.8s" data-wow-delay="0.6s">
+                            <!--img_blog-->
+                              <div class="img_blog">
+                                <img src="img/blog/04.png" alt="">
+                                <!--hover_img_blog-->
+                                 <div class="hover_img_blog center">
+                                    <a href="single-post.html">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                 </div>
+                                 <!--End hover_img_blog-->
+                              </div>   
+                            <!-- End img_blog-->  
+                            
+                            <!-- info blog-->  
+                            <div class="info_blog">
+                              <!--date_blog-->
+                              <div class="date_blog">
+                                <h2><a href="single-post.html">We’re Translating Tuts+!</a></h2>
+                                  <ul>
+                                    <li><i class="fa fa-user color-black"></i><a href="#"> Ian Yates</a></li>
+                                    <li><i class="fa fa-comments color-black"></i><a href="#"> 08 Comments</a></li>
+                                    <li><i class="fa fa-calendar color-black"></i> Aug. 26 2014</li>
+                                  </ul>
+                              </div>
+                              <!--End date_blog-->
+
+                                <!--text_blog-->
+                                <div class="text_blog text-overflow">
+                                  <a href="#"><p>Now it’s possible for volunteers to translate whichever written tutorials they please. We take the translations, give them the once-over.</p></a>
+                                </div>
+                                <!--End text_blog-->
+                            </div>
+                            <!-- End Info blog-->    
+
+                        </div>
+                        <!--End Item Blog-->
+                      
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+
+                        <!--Item Blog-->
+                        <div class="item_blog top wow flipInX animated" data-wow-duration="1.8s" data-wow-delay="1.0s">
+                            <!--img_blog-->
+                              <div class="img_blog">
+                                <img src="img/blog/03.png" alt="">
+                                <!--hover_img_blog-->
+                                 <div class="hover_img_blog center">
+                                    <a href="single-post.html">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                 </div>
+                                 <!--End hover_img_blog-->
+                              </div>   
+                            <!-- End img_blog-->  
+                            
+                            <!-- info blog-->  
+                            <div class="info_blog">
+                              <!--date_blog-->
+                              <div class="date_blog">
+                                <h2><a href="single-post.html">It’s Our Birthday! Join the Celebrations</a></h2>
+                                  <ul>
+                                    <li><i class="fa fa-comments color-black"></i><a href="#"> 05 Comments</a></li>
+                                    <li><i class="fa fa-calendar color-black"></i> Aug. 13 2014</li>
+                                  </ul>
+                              </div>
+                              <!--End date_blog-->
+
+                                <!--text_blog-->
+                                <div class="text_blog text-overflow">
+                                  <a href="#"><p>Things are a little festive around the Tuts+ and Envato offices this week as we celebrate our 8th birthday.</p></a>
+                                </div>
+                                <!--End text_blog-->
+                            </div>
+                            <!-- End Info blog-->    
+
+                        </div>
+                        <!--End Item Blog-->
+                      
+                    </div>
+
+                </div>
+                <!--Content Blog-->
+
+            </div>
+            <!-- end container -->
+
+            <!-- pattern_bottom -->
+            <div class="pattern_bottom"></div>
+            <!-- end pattern_bottom -->
+        </section>
+        <!-- end Blog -->
+
+        <!-- Services -->
+        <section class="bg_image" id="services">
+            
+            <!-- pattern_top -->
+            <div class="pattern_top"></div>
+            <!-- end pattern_top -->
+
+            <!-- content -->
+            <div class="opacy">
+
+                <div class="container">
+
+                    <!-- Services-->
+                    <div class="services">
+
+                        <div class="row">
+                            <div class="title center">
+                                <h2 class="wow fadeInLeft animated" data-wow-duration="1.5s">Services</h2>
+                            </div>
+                        </div>
+
+                        <div class="divider_light"></div>
+
+                        <div class="paddings-content wow fadeIn animated" data-wow-duration="2.0s">
+                            <!--testimonials-->
+                            <ul class="testimonials">
+
+                              <!--Item-->
+                              <li>
+                                <div class="item_testimonial">
+                                  <div class="img_testimonial">
+                                    <img src="img/testimonials/01.png" alt="">
+                                  </div>
+                                  <div class="about_testimonial">
+                                    <span>@jekamabu</span>
+                                    <p>I advice everyone, doesn't matter which theme you buy, you can be sure that you will get a very good support whenever you need.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <!--Item-->
+
+                               <!--Item-->
+                              <li>
+                                <div class="item_testimonial">
+                                  <div class="img_testimonial">
+                                    <img src="img/testimonials/02.png" alt="">
+                                  </div>
+                                  <div class="about_testimonial">
+                                    <span>@jekamabu</span>
+                                    <p>I advice everyone, doesn't matter which theme you buy, you can be sure that you will get a very good support whenever you need.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <!--Item-->
+
+                               <!--Item-->
+                              <li>
+                                <div class="item_testimonial">
+                                  <div class="img_testimonial">
+                                    <img src="img/testimonials/03.png" alt="">
+                                  </div>
+                                  <div class="about_testimonial">
+                                    <span>@jekamabu</span>
+                                    <p>I advice everyone, doesn't matter which theme you buy, you can be sure that you will get a very good support whenever you need.</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <!--Item-->
+                            </ul>
+                            <!--End testimonials-->
+
+                            <!--Services Info Boxes-->
+                            <div class="services_info">
+
+                                <div class="border_right"></div>
+
+                                <div class="row border_services">
+                                    <!--item_services-->
+                                    <div class="col-md-6 item_services left col-sm-6 col-xs-12">
+                                       <h2>01</h2>
+                                       <h3>Smart, Curious, Hands on.</h3>
+                                       <p>Lance Snider working in the Bonneville Salt Flats, Utah</p>
+
+                                        <!--Hover Item-->
+                                        <div class="info_hover hover-zoom">
+                                            <h3><i class="fa fa-cogs"></i> Smart, Curious, Hands on.</h3>
+
+                                            <div class="info_hover_content">
+                                                <p>Those are the qualities we look for in our team. Other words that might describe us, and hopefully you too, include: friendly, enthusiastic, inventive, persistent, funny (some more than others), creative, geeky and proficient. We also wanted to say profligate because it sounds good, but we looked it up and it really isn’t us.</p>
+                                                <p>Envato is headquartered in Melbourne, Australia, but a sizable number of Envato staff work remotely and autonomously from home offices, coffee shops, or anywhere with an internet connection. We have team members in Canada, USA, UK, Malaysia, Romania, Latvia, France, Spain, Italy, Germany, Sweden, The Netherlands, India, and Belgium; from urban centres to the remotest of spots.</p>
+                                            </div>
+
+                                        </div>
+                                       <!--Hover Item-->
+                                    </div>
+                                    <!--End item_services-->
+
+                                    <!--item_services-->
+                                    <div class="col-md-6 item_services left col-sm-6 col-xs-12">
+                                       <h2>02</h2>
+                                       <h3>When We Say Remote We Mean Remote!</h3>
+                                       <p>Photobombers rove the office looking for victims</p>
+
+                                       <!--Hover Item-->
+                                        <div class="info_hover hover-zoom">
+                                            <h3><i class="fa fa-bell-o"></i> When We Say Remote We Mean Remote!</h3>
+                                            <div class="info_hover_content">
+                                                <p>Working at Envato is about being a part of our internal community. We all work hard to make Envato both a successful company, and a fun, friendly and happy workplace. From catered lunchtime talks, a communal garden, online letterpress tournaments, a lively Yammer channel and the odd ‘party pants’ day in the office, working at Envato is about doing a great job and having a great place to do it at.</p>
+                                                <ul>
+                                                    <li><p>The community is our backbone and we always try to make decisions with their best interests in mind. It is critical to us that we have a win-win approach to work, and that we get involved with and talk to the community.</p></li>
+                                                </ul>
+                                            </div>
+                                       </div>
+                                       <!--Hover Item-->
+                                      <!--End item_services-->
+                                    </div>
+                                </div>
+
+                                <div class="row border_services">
+
+                                    <!--item_services-->
+                                    <div class="col-md-6 item_services left col-sm-6 col-xs-12">
+                                       <h2>03</h2>
+                                       <h3>A Fun, Friendly HQ</h3>
+                                       <p>Ext to our well worn, and slightly wonky pool table.</p>
+
+                                       <!--Hover Item-->
+                                       <div class="info_hover hover-zoom">
+                                            <h3><i class="icon-bell"></i> A Fun, Friendly HQ</h3>
+
+                                            <div class="info_hover_content">
+                                                <p>When you work in front of a screen all day, it’s good to get up and about. That’s why Envato HQ is home to a slightly off-centre pool table, a retro arcade table, a massage chair and a culture of stand-up meetings, bean bag chats and the occasional developer dressed in a giant box pretending to be a robot. You also stand a good chance of getting photo bombed.</p>
+                                                <ul>
+                                                    <li><p>The community is our backbone and we always try to make decisions with their best interests in mind. It is critical to us that we have a win-win approach to work, and that we get involved with and talk to the community.</p></li>
+                                                    <li><p>Everyone deserves an equal chance and a fair opportunity. At work, on our sites, and in life we strive to be fair and consistent in everything we do.</p></li>
+                                                </ul>
+                                            </div>
+                                       </div>
+                                       <!--Hover Item-->
+                                    </div>
+                                    <!--End item_services-->
+
+                                    <!--item_services-->
+                                    <div class="col-md-6 item_services left col-sm-6 col-xs-12">
+                                       <h2>04</h2>
+                                       <h3>A Community at Work.</h3>
+                                       <p>Justin French UX / Product Manager</p>
+
+                                       <!--Hover Item-->
+                                        <div class="info_hover hover-zoom">
+                                            <h3><i class="fa fa-money"></i> A Community at Work.</h3>
+
+                                            <div class="info_hover_content">
+                                                <p>Working at Envato is about being a part of our internal community. We all work hard to make Envato both a successful company, and a fun, friendly and happy workplace. From catered lunchtime talks, a communal garden, online letterpress tournaments, a lively Yammer channel and the odd ‘party pants’ day in the office, working at Envato is about doing a great job and having a great place to do it at.</p>
+                                            </div>
+                                        </div>
+                                       <!--Hover Item-->
+
+
+                                    </div>
+                                    <!--End item_services-->
+                                </div>
+
+                            </div>
+                            <!--Services Info Boxes-->
+                        </div>
+                    </div>
+                    <!--Services-->
+                </div>
+
+             </div>
+            <!-- end content -->
+        
+            <!-- pattern_bottom -->
+            <div class="pattern_bottom"></div>
+            <!-- end pattern_bottom -->
+
+        </section>
+        <!-- end Services -->
+
+        <!-- Partners -->
+        <section class="color paddings">
+
+            <!-- pattern_top -->
+            <div class="pattern_top"></div>
+            <!-- end pattern_top -->
+
+            <div class="container">
+
+                    <div class="row title">
+                        <div class="col-md-8">
+                            <h2 class="color-black wow bounceInLeft animated" data-wow-duration="2.5s">Partners</h2>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="left wow bounceInRight animated" data-wow-duration="2.5s">Our relationships are supported by a supply chain of socially responsible, ethical companies.</p>
+                        </div>
+                    </div>
+
+                    <div class="divider_dark"></div>
+    
+                    <!--Content Blog-->
+                    <div class="paddings-content">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!--Partners-->
+                                <ul class="partners">
+
+                                    <li><a href="#" target="_blank"><img src="img/partners/01.png" alt=""></a></li>
+
+                                    <li><a href="#" target="_blank"><img src="img/partners/02.jpg" alt=""></a></li>
+
+                                    <li><a href="#" target="_blank"><img src="img/partners/03.jpg" alt=""></a></li>
+
+                                    <li><a href="#" target="_blank"><img src="img/partners/01.png" alt=""></a></li>
+
+                                    <li><a href="#" target="_blank"><img src="img/partners/02.jpg" alt=""></a></li>
+
+                                    <li><a href="#" target="_blank"><img src="img/partners/03.jpg" alt=""></a></li>
+                                </ul>
+                                <!--Partners-->
+
+                            </div>
+                        </div>
+
+                        <div class="divider_dark"></div>
+
+                        <!-- specialize -->
+                        <div class="specialize center">
+                           <div class="row">
+
+                                  <div class="col-md-2 col-sm-12"><h3>we specialize in:</h3></div>
+
+                                  <!-- icon 01 -->
+                                  <div class="col-md-2 col-sm-2">
+                                    <a href="#" class="tooltip_hover color-font-black" title="" data-original-title="Details Service"><i class="fa fa-desktop"></i></a>
+                                    <p>Interactive Design</p>
+                                  </div>
+                                  <!-- end icon 01 -->
+
+                                  <!-- icon 02 -->
+                                  <div class="col-md-2 col-sm-2">
+                                    <a href="#" class="tooltip_hover" title="" data-original-title="Details Service"><i class="fa fa-pencil"></i></a>
+                                    <p>Illustration</p>
+                                  </div>
+                                  <!-- end icon 02 -->
+
+                                  <!-- icon 03 -->
+                                  <div class="col-md-2 col-sm-2">
+                                    <a href="#" class="tooltip_hover" title="" data-original-title="Details Service"><i class="fa fa-mobile"></i></a>
+                                    <p>Apps Design</p>
+                                  </div>
+                                  <!-- end icon 03 -->
+
+                                  <!-- icon 04 -->
+                                  <div class="col-md-2 col-sm-2">
+                                    <a href="#" class="tooltip_hover" title="" data-original-title="Details Service"><i class="fa fa-user"></i></a>
+                                    <p>UI/UX</p>
+                                  </div>
+                                  <!-- end icon 04 -->
+
+                                  <!-- icon 05 -->
+                                  <div class="col-md-2 col-sm-2">
+                                    <a href="#" class="tooltip_hover" title="" data-original-title="Details Service"><i class="fa fa-chain-broken"></i></a>
+                                    <p>Code</p>
+                                  </div>
+                                  <!-- end icon 05 -->
+
+                           </div>
+                        </div>
+                        <!-- end specialize -->
+
+                    </div>
+
+            </div>
+
+          <!-- pattern_top -->
+          <div class="pattern_bottom"></div>
+          <!-- end pattern_top -->
+
+        </section>
+        <!-- Partners -->
+
+        <!-- Video Example -->
+        <section class="bg_image play-video center">
+            
+            <!-- pattern_top -->
+            <div class="pattern_top"></div>
+            <!-- end pattern_top -->
+
+            <!-- content -->
+            <div class="opacy">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="wow bounceIn animated" data-wow-duration="1.5s">                          
+                                <h2>Play Video</h2>
+                                <a class="iframe_video" title="" href="http://www.youtube.com/embed/2f2n1bW7vZ0?autoplay=1">
+                                    <i class="fa fa-play-circle-o"></i>
+                                </a>
+                                <h2>Learn More</h2>
+                            </div>
+                           
+
+                        </div>
+
+                    </div>
+                </div> 
+
+             </div>
+            <!-- end content -->
+        
+            <!-- pattern_bottom -->
+            <div class="pattern_bottom"></div>
+            <!-- end pattern_bottom -->
+
+        </section>
+        <!-- end Video Example -->
+
+        <!-- Contact -->
+        <section class="color contact_us paddings center" id="contact">
+
+            <!-- pattern_top -->
+            <div class="pattern_top"></div>
+            <!-- end pattern_top -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2 class="color-black wow bounceIn animated" data-wow-duration="1.5s">Contact</h2>
+                    </div>
+                </div>
+
+                <div class="divider_dark"></div>
+
+                <div class="row paddings-content wow fadeIn animated" data-wow-duration="2.0s">
+                    <div class="col-md-12">
+
+                      <p>We’re always looking for new projects to work on, if you have some please write us!</p>
+                      <h3><a href="mailto:info@domain.com"><i class="fa fa-envelope"></i> contact@domain.com</a></h3>
+
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Send a Message</button>
+
+                    </div>
+                </div>
+
+                <div class="divider_dark"></div>
+
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12 number">
+                        <ul>
+                            <li><i class="fa fa-mobile-phone"></i></li>
+                            <li><p>+51 2526148681</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 left col-sm-12 number">
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i></li>
+                            <li><p>80, Street name postal code,city name <br><span>Country</span></p></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- pattern_bottom -->
+            <div class="pattern_bottom"></div>
+            <!-- end pattern_bottom -->
+
+        </section>
+        <!-- end Contact -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social_icon center">
+                            <ul>
+                                <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade left" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title center" id="myModalLabel">Send us a Message</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <!--Form Contact-->
+                        <form class="form-contact" action="php/send-mail-contact.php">
+                            <div class="form_contact">
+                                <input type="text" class="name form-control" placeholder="Full Name" required="required" name="Name">
+                                <input type="email" class="email form-control" placeholder="Email" required="required" name="Email">
+                                <textarea class="form-control" rows="4" placeholder="Message" required="required" name="Message"></textarea>
+                            </div>
+
+                            <input type="submit" value="Send Message" name="subscribe">
+
+                            <div class="result"></div>
+                        </form>
+                        <!--Form Contact-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+
+  </div>
+  <!--Layout Theme Options-->
+
+      <!-- ======================= JQuery libs =========================== -->
+        <!-- jQuery local-->    
+        <script type="text/javascript" src="js/jquery.js"></script> 
+        <!--Lightbox--> 
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script> 
+        <!--Animations-->
+        <script type="text/javascript" src="js/animations/wow.js" ></script> 
+        <!--Totop-->
+        <script type="text/javascript" src="js/totop/jquery.ui.totop.js" ></script>  
+        <!--Accorodion-->
+        <script type="text/javascript" src="js/accordion/accordion.js" ></script>
+        <!--Scroll-->   
+        <script src="js/scroll/jquery.nicescroll.js"></script> 
+        <script src="js/scroll/smooth-scroll.js" type="text/javascript"></script> 
+        <script src="js/scroll/jquery.mCustomScrollbar.concat.min.js"></script>  
+        <!-- Carrousel --> 
+        <script src="js/carousel/carousel.js"></script>  
+        <!--Theme Options-->
+        <script type="text/javascript" src="js/theme-options/theme-options.js"></script>
+        <script type="text/javascript" src="js/theme-options/jquery.cookies.js"></script>  
+        <!--Slide-->
+        <script type="text/javascript" src="js/slide/camera.js" ></script>      
+        <script type='text/javascript' src='js/slide/jquery.easing.1.3.min.js'></script>   
+        <!--Slide Revolution-->
+        <script type="text/javascript" src="js/slide-revolution/jquery.themepunch.tools.min.js"></script>   
+        <script type="text/javascript" src="js/slide-revolution/jquery.themepunch.revolution.js"></script>
+        <!-- Parallax-->
+        <script type="text/javascript" src="js/parallax/jquery.inview.js"></script>
+        <script type="text/javascript" src="js/parallax/nbw-parallax.js"></script>  
+        <script type="text/javascript" src="js/parallax-func.js"></script>  
+        <!--Bg Moving-->
+        <script type="text/javascript" src="js/bg-moving-func.js" ></script> 
+        <script type="text/javascript" src="js/bg-moving/jquery.bgscroll.js" ></script> 
+        <!-- Nav-->
+        <script src="js/nav/jquery.sticky.js"></script>
+        <!-- Bootstrap.js-->
+        <script src="js/bootstrap/bootstrap.js"></script>
+        <!--fUNCTIONS-->
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/slider-func.js" ></script> 
+      <!-- ======================= End JQuery libs =========================== -->
+
+
+    </body>
+</html>

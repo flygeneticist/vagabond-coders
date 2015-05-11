@@ -1,2 +1,2 @@
-# Vagabond Coders
-## A Nomadic Web Development Studio
+# Youmu Studio (游牧)
+## Nomadic Web Development Studio
