@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-/* ============================== 
-	- Template Name: Studio - Responsive Multipurpose html5/Css3 Template
+/* ==============================
+	- Template Name: Youmu Studio - Responsive Multipurpose html5/Css3 Template
 	- Autor: Iwthemes
 	- Email: support@iwthemes.com
 	- Name File: style.css
 	- Version 1.5 Updated 20sep 2014
-	- Website: http://www.iwthemes.com 
+	- Website: http://www.iwthemes.com
 	- Copyright: (C) 2014
 =================================
 
@@ -15,7 +15,7 @@
 -------------------------
 
 01. Import styles
-	-  bootstrap.css 
+	-  bootstrap.css
 	-  Lightbox
 	-  ScrollBar
 	-  Icons
@@ -30,7 +30,7 @@
 	-  Slider Revolution
 	-  Video
 	-  Fonts Google
-	
+
 0.2.  Basic Elements
 
 0.3.  Menu
@@ -50,7 +50,7 @@
 	-  Services
 	-  Play Video
 	-  Video Bg
-	-  Bg Moving 
+	-  Bg Moving
 	-  Bg Image Simple
 	-  Contact us
 	-  Footer
@@ -122,7 +122,7 @@ html{
 }
 body{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;	
+	font-size: 16px;
 	line-height: 24px;
 	color:#fff;
 	background-color: #fff;
@@ -131,7 +131,7 @@ a{
 	color: #fff;
 }
 a:hover{
-	text-decoration: none;	
+	text-decoration: none;
 }
 p{
 	font-size: 1.6rem;
@@ -148,7 +148,7 @@ h6 {font-size:1.2rem;}
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 	line-height: 3rem;
-	margin: 0;	
+	margin: 0;
 	color: #fff;
 	font-family: 'Bree Serif', serif;
 }
@@ -411,11 +411,11 @@ header{
 	margin: 0 auto;
 }
 .social_icon ul li{
-	display: inline-block;	
+	display: inline-block;
 	padding: 0 3rem;
 }
 .social_icon ul li:last-child{
-	border-right:0;			
+	border-right:0;
 }
 .social_icon a i{
 	color: #000;
@@ -589,7 +589,7 @@ textarea.form-control{
 	font-size: 17px;
 }
 .icons_fonts a{
-	color: #686868;	
+	color: #686868;
 	font-size: 1.4rem;
 	line-height: 3.6rem;
 }
@@ -625,7 +625,7 @@ textarea.form-control{
 	position: absolute;
 	left: 0;
 	top: 0;
-	opacity: 0;	
+	opacity: 0;
 }
 .hover_img_blog i{
 	font-size: 3.5rem;
@@ -664,7 +664,7 @@ textarea.form-control{
 	color: #fff;
 }
 
-	
+
 	/* Single Post--------------------------------------------------*/
 	aside .divider_dark{
 		margin: 10px 0;
@@ -885,7 +885,7 @@ textarea.form-control{
 	height: 100%;
 	position: relative;
 }
-.bg-moving-1{	
+.bg-moving-1{
 	background: url(../img/moving/01.jpg);
 }
 
@@ -1042,7 +1042,7 @@ footer .social_icon ul li a i{
 	overflow:hidden;
 	float:left;
 	opacity: 0;
-	-moz-opacity: 0;	
+	-moz-opacity: 0;
 }
 #toTop:active, #toTop:focus {
 	outline:none;
@@ -1052,14 +1052,14 @@ footer .social_icon ul li a i{
 
 .acc-trigger { cursor: pointer;  margin: 0 0 0 0; width: 100%;	}
 .no-js .acc-trigger:last-of-type { border-bottom: none; }
-.acc-trigger a { 
-	background: url("../img/img-theme/accordion-ico.png") no-repeat 14px 13px; 
-	display: block; 
-	padding: 11px 20px 11px 44px; 
-	text-decoration: none; 
-	font-size: 14px; 
-	border-bottom: 1px solid #e3e3e3; 
-	border-top: 1px solid #e3e3e3; 
+.acc-trigger a {
+	background: url("../img/img-theme/accordion-ico.png") no-repeat 14px 13px;
+	display: block;
+	padding: 11px 20px 11px 44px;
+	text-decoration: none;
+	font-size: 14px;
+	border-bottom: 1px solid #e3e3e3;
+	border-top: 1px solid #e3e3e3;
 	color: #232323;
 }
 .acc-trigger a:first-child{
@@ -1071,10 +1071,10 @@ footer .social_icon ul li a i{
 .acc-trigger.active:last-of-type { border-bottom: none; margin-bottom: 0; }
 .acc-trigger.active a { background-position: 14px -58px; cursor: default;	}
 .acc-container .content,
-.tab-pane{  
-	padding: 15px 14px 5px 44px; 
-	color: #000;  
-	margin-bottom: 10px; 
+.tab-pane{
+	padding: 15px 14px 5px 44px;
+	color: #000;
+	margin-bottom: 10px;
 }
 
 .table,
@@ -1092,7 +1092,7 @@ footer .social_icon ul li a i{
 }
 
 .tab-pane{
-	padding: 15px 14px 5px 18px; 
+	padding: 15px 14px 5px 18px;
 }
 
 .fontawesome-icon-list a{
@@ -1102,11 +1102,11 @@ footer .social_icon ul li a i{
 /* Tables pricing -----------------------------------------------*/
 
 .item-table{
-	border: solid 1px #dedede;	
+	border: solid 1px #dedede;
 	border-radius: 0.5rem;
 	-moz-border-radius: 0.5rem;
 	-webkit-border-radius: 0.5rem;
-	padding-bottom: 25px;	
+	padding-bottom: 25px;
 	text-align: center;
 }
 .item-table .header-table{
@@ -1125,7 +1125,7 @@ footer .social_icon ul li a i{
 	font-size: 1.5rem;
 	line-height: 3.6rem;
 	font-weight: bold;
-	margin-left: 3px;	
+	margin-left: 3px;
 	padding: 5px 10px;
 	background: rgba(0,0,0,0.3);
 	border-radius: 0.5rem;
@@ -1134,7 +1134,7 @@ footer .social_icon ul li a i{
 	letter-spacing: -1px;
 }
 .item-table ul{
-	margin-bottom: 2.5rem;	
+	margin-bottom: 2.5rem;
 	text-align: left;
 }
 .item-table ul li{
@@ -1179,16 +1179,16 @@ footer .social_icon ul li a i{
 	margin: auto 5px;
 }
 .color-red{
-	background: #E1483F; 
-	background-color: #E1483F; 
+	background: #E1483F;
+	background-color: #E1483F;
 }
 .color-blue{
-	background: #0088cc; 
-	background-color: #0088cc; 
+	background: #0088cc;
+	background-color: #0088cc;
 }
 .color-green{
-	background: #88C425; 
-	background-color: #88C425; 
+	background: #88C425;
+	background-color: #88C425;
 }
 
 .carousel-pricing li{

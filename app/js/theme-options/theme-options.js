@@ -2,11 +2,11 @@
 //--------------------------------------------------------------------------------------------------------------------------------
 //This is JS file that contains skin, layout Style and bg used in this template*/
 // -------------------------------------------------------------------------------------------------------------------------------
-// Template Name: Studio
+// Template Name: Youmu Studio
 // Author: Iwthemes.
 // Name File: theme-options.js
 // Version 1.0 - Created on 1sep 2014
-// Website: http://www.iwthemes.com 
+// Website: http://www.iwthemes.com
 // Email: support@iwthemes.com
 // Copryright: (C) 2014
 // -------------------------------------------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@
 	function interface(){
 
     // Skin value
-    var skin = "orange-light"; // // blue, bone, brown, cyan, green, orange, orange-light, purple, red, yellow 
+    var skin = "orange-light"; // // blue, bone, brown, cyan, green, orange, orange-light, purple, red, yellow
 
     // Layout Style
     var skin_version = ""; // style-light, style-dark, default
@@ -28,11 +28,11 @@
 
     $(".skin").attr("href", "css/skins/"+ skin + "/" + skin + ".css");
     $("#layout").addClass(layout);
-    $("#layout").addClass(skin_version);	
+    $("#layout").addClass(skin_version);
     $("#theme-options").css('opacity' , themepanel);
-    
+
     return false;
-    
+
   }
 
  	interface();
@@ -42,7 +42,7 @@
 	$('.single-post h1, .single-post h2, .single-post h3, .single-post h4, .single-post h5, .single-post h6').addClass('color-dark-font');
 
 	$('.color-light .title p, .color-light .date_blog li, .color-light .date_blog li a, .color-light .date_blog h2 a, .color-light .text_blog a, .color-light .social h3, .color-light .color-black, .color-light .social h3 span, .color-light .number p, .color-light.contact_us p, .color-light.contact_us h3 a, .color-light aside h2, .color-light aside p, .color-light .color-dark-font').addClass('color-font-black').removeClass('color-font');
-	
+
 	$('.light').click(function() {
 		$('.dark').removeClass('active');
 		$('.default').removeClass('active');
@@ -56,7 +56,7 @@
 		$('.color-light .social_icon a i').css('color','#fff');
 		$('.color-light .title p, .color-light .date_blog li, .color-light .date_blog li a, .color-light .date_blog h2 a, .color-light .text_blog a, .color-light .social h3, .color-light .color-black, .color-light .social h3 span, .color-light .number p, .color-light.contact_us p, .color-light.contact_us h3 a, .color-light aside h2, .color-light aside p, .color-light .color-dark-font').addClass('color-font-black').removeClass('color-font');
 	});
-	
+
 	$('.dark').click(function() {
 		$('.light').removeClass('active');
 		$('.default').removeClass('active');
@@ -156,7 +156,7 @@
  });
 
 	//=================================== Background Options ====================================//
-	
+
 	$('#theme-options ul.backgrounds li').click(function(){
 		$bgSrc = $(this).css('background-image');
 		if ($(this).attr('class') == 'bgnone')
