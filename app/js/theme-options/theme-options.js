@@ -18,10 +18,10 @@
 	function interface(){
 
     // Skin value
-    var skin = "orange-light"; // // blue, bone, brown, cyan, green, orange, orange-light, purple, red, yellow
+    var skin = "blue"; // // blue, bone, brown, cyan, green, orange, orange-light, purple, red, yellow
 
     // Layout Style
-    var skin_version = ""; // style-light, style-dark, default
+    var skin_version = "style-light"; // style-light, style-dark, default
 
     // Theme Panel - disable panel options
     var themepanel = "0"; // 1 (default - enable), 0 (disable)
